@@ -9,7 +9,7 @@ export const ContactsPage = ({ contacts, addContact }) => {
   contact info and duplicate check
   */
   const [name, setName] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
+  const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [isDuplicate, setIsDuplicate] = useState(false);
   // useEffect hook to check for duplicates whenever the name state variable changes.
@@ -25,9 +25,9 @@ export const ContactsPage = ({ contacts, addContact }) => {
     if the contact name is not a duplicate
     */
     if (!isDuplicate) {
-      addContact(name, phoneNumber, email);
+      addContact(name, phone, email);
       setName('');
-      setPhoneNumber('');
+      setPhone('');
       setEmail('');
     } else {
       alert("Duplicate name detected! Please enter a different name.");
@@ -42,27 +42,18 @@ export const ContactsPage = ({ contacts, addContact }) => {
   return (
     <div>
       <section>
-        <h2 
-        onSubmit={handleSubmit}
-        >Add Contact</h2>
-        <input
-        type="text"
-        placeholder="Name"
-        value={name}
-        onChange={e => setName(e.target.value)}
+        <h2>Add Contact</h2>
+        <ContactForm 
+        name={name}
+        setName={setName}
+        phone={phone}
+        setPhone={setPhone}
+        email={email}
+        setEmail={setEmail}
+        handleSubmit={handleSubmit}
         />
-        <input
-        type="text"
-        placeholder="Phone Number"
-        value={phoneNumber}
-        onChange={e => setPhoneNumber(e.target.value)}
-        />
-        <input
-        type="text"
-        placeholder="Email"
-        value={email}
-        onChange={e => setEmail(e.target.value)}
-        />
+        {isDuplicate && 
+        <p>Duplicate name detected!</p>}
       </section>
       <hr />
       <section>
