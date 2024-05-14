@@ -17,21 +17,25 @@ function App() {
   contacts and appointments
   */
   const addContact = (name, phoneNumber, email) => {
+    // Create new contact object.
     const newContact = {
       name,
       phoneNumber,
       email
     };
+    // Update the contacts array using the previous state.
     setContacts(prevContacts => [...prevContacts, newContact]);
   };
 
   const addAppointment = (name, contact, date, time) => {
+    // Create new appointment object.
     const newAppointment = {
       name,
       contact,
       date,
       time
     };
+    // Update the appointments array using the previous state.
     setAppointments(prevAppointments => [...prevAppointments, newAppointment]);
   };
 
