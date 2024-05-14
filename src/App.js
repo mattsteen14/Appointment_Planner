@@ -9,18 +9,24 @@ function App() {
   Define state variables for 
   contacts and appointments 
   */
-  const [contacts, setContacts] = useState([]);
+  const [contacts, setContacts] = useState([
+    {
+      name: "Matt Steen-Brookes",
+      phone: "07814 128686",
+      email: "mattsteen14@me.com"
+    }
+  ]);
   const [appointments, setAppointments] = useState([]);
 
   /*
   Implement functions to add data to
   contacts and appointments
   */
-  const addContact = (name, phoneNumber, email) => {
+  const addContact = (name, phone, email) => {
     // Create new contact object.
     const newContact = {
       name,
-      phoneNumber,
+      phone,
       email
     };
     // Update the contacts array using the previous state.
