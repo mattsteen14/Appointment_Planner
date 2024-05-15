@@ -6,29 +6,38 @@ export const ContactPicker = ({
   value,
   name
 }) => {
-  if (!contacts || contacts.length === 0) {
-    return <option
-      value=""
-    >
-      No Contact Selected
-    </option>
-  }
   return (
-    <div>
-      <select
-        onChange={onChange}
-        value={value}
-        name={name}
+    <select
+      aria-label="Contact Picker"
+      onChange={onChange}
+      value={value}
+      name={name}
+    >
+      <option
+        value={""}
+        key={-1}
       >
-        {contacts.map(contact => (
+        No Contact Selected
+      </option>
+      {contacts.map((contact) => {
+        return (
           <option
             key={contact}
             value={contact}
           >
             {contact}
           </option>
-        ))}
-      </select>
-    </div>
+        );
+      })}
+    </select>
   );
 };
+
+
+// if (!contacts || contacts.length === 0) {
+//   return <option
+//     value=""
+//   >
+//     No Contact Selected
+//   </option>
+// }

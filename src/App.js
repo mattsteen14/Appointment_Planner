@@ -18,25 +18,42 @@ function App() {
   */
   const addContact = (name, phone, email) => {
     // Create new contact object.
-    const newContact = {
-      name,
-      phone,
-      email
-    };
-    // Update the contacts array using the previous state.
-    setContacts(prevContacts => [...prevContacts, newContact]);
+    // const newContact = {
+    //   name: name,
+    //   phone: phone,
+    //   email: email,
+    // };
+    // // Update the contacts array using the previous state.
+    // setContacts(prevContacts => [...prevContacts, newContact]);
+    setContacts([
+      ...contacts,
+      {
+        name: name,
+        phone: phone,
+        email: email,
+      },
+    ]);
   };
 
   const addAppointment = (name, contact, date, time) => {
-    // Create new appointment object.
-    const newAppointment = {
-      name,
-      contact,
-      date,
-      time
-    };
-    // Update the appointments array using the previous state.
-    setAppointments(prevAppointments => [...prevAppointments, newAppointment]);
+    // // Create new appointment object.
+    // const newAppointment = {
+    //   name: name,
+    //   contact: contact,
+    //   date: date,
+    //   time: time,
+    // };
+    // // Update the appointments array using the previous state.
+    // setAppointments(prevAppointments => [...prevAppointments, newAppointment]);
+    setAppointments([
+      ...appointments,
+      {
+        name: name,
+        contact: contact,
+        date: date,
+        time: time,
+      }
+    ])
   };
 
   const router = createBrowserRouter(createRoutesFromElements(
@@ -49,7 +66,8 @@ function App() {
       <Route path={ROUTES.APPOINTMENTS} element={ 
       <AppointmentsPage 
       appointments={appointments} 
-      addAppointment={addAppointment} 
+      addAppointment={addAppointment}
+      contacts={contacts} 
       /> /* Add props to AppointmentsPage */ }/>
     </Route>
   ));
