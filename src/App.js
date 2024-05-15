@@ -18,42 +18,25 @@ function App() {
   */
   const addContact = (name, phone, email) => {
     // Create new contact object.
-    // const newContact = {
-    //   name: name,
-    //   phone: phone,
-    //   email: email,
-    // };
-    // // Update the contacts array using the previous state.
-    // setContacts(prevContacts => [...prevContacts, newContact]);
-    setContacts([
-      ...contacts,
-      {
-        name: name,
-        phone: phone,
-        email: email,
-      },
-    ]);
+    const newContact = {
+      name: name,
+      phone: phone,
+      email: email,
+    };
+    // Update the contacts array using the previous state.
+    setContacts(prevContacts => [...prevContacts, newContact]);
   };
 
   const addAppointment = (name, contact, date, time) => {
     // // Create new appointment object.
-    // const newAppointment = {
-    //   name: name,
-    //   contact: contact,
-    //   date: date,
-    //   time: time,
-    // };
-    // // Update the appointments array using the previous state.
-    // setAppointments(prevAppointments => [...prevAppointments, newAppointment]);
-    setAppointments([
-      ...appointments,
-      {
-        name: name,
-        contact: contact,
-        date: date,
-        time: time,
-      }
-    ])
+    const newAppointment = {
+      name: name,
+      contact: contact,
+      date: date,
+      time: time,
+    };
+    // Update the appointments array using the previous state.
+    setAppointments(prevAppointments => [...prevAppointments, newAppointment]);
   };
 
   const router = createBrowserRouter(createRoutesFromElements(
