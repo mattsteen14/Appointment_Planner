@@ -35,7 +35,7 @@ export const ContactForm = ({
         />
         <button
         type="submit"
-        disabled
+        // disabled
         aria-label="Submit Form"
         title="Submit Form"
         >
