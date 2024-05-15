@@ -84,13 +84,17 @@
 
 <!-- [![Portfolio Screen Shot][product-screenshot]](https://github.com/mattsteen14/appointment_planner) -->
 
-# Project Brief
+### Codecademy Project Brief
 
-In this project, you will use functional React components to create an app that manages contacts and appointments. The app consists of two pages: one to view and add contacts and one to view and add appointments.
+"In this project, you will use functional React components to create an app that manages contacts and appointments. The app consists of two pages: one to view and add contacts and one to view and add appointments.
 
-You will work with stateful and stateless functional React components using hooks. The requirements section will walk through implementing the app from the topmost component down. If you would like to implement it in a different order, feel free to do what is comfortable for you.
+You will work with stateful and stateless functional React components using hooks. The requirements section will walk through implementing the app from the topmost component down. "
 
+### My Comments
 
+I feel that this Appointment Planner challenge project has been really valuable and quite enjoyable. It has only taken me a day and a half to complete and things went a lot smoother than my other recent React projects for the course like [Jammming](https://github.com/mattsteen14/jammming) which is still ongoing so I feel that I am growing in confidence with React and getting into a flow more often with it. I compared mine with the solution code provided. This helped with some troubleshooting issues like why the TileList wasn't generating but through testing I worked out that some of my code worked so I kept it like I had it, like the useEffect() & the alert in the handleSubmit() in the ContactsPage component.
+
+To add to the project I want to personalise and improve the styling with CSS and I would like to add functionality to remove contacts and appointments. Other suggestions are welcome so feel free to request features.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -216,9 +220,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- ROADMAP -->
 ## Roadmap
 
-<!-- - [ ] Codecademy 'Create a Playlist App With the Spotify API (Part Two)' task - add new feature through technical design planning.
+- [ ] Personalise & improve styling with CSS.
+- [ ] Add functionality to remove contacts & appointments.
 - [ ] Testing & Debugging.
-- [ ] Use surge to deploy. -->
+- [ ] Share on Codecademy forums for feedback.
+- [ ] Use surge to deploy.
 
 See the [open issues](https://github.com/mattsteen14/appointment_planner/issues) for a full list of proposed features (and known issues).
 

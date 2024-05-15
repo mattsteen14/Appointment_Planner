@@ -24,23 +24,15 @@ export const ContactsPage = ({ contacts, addContact }) => {
       setName("");
       setPhone("");
       setEmail("");
-    } 
+    } else {
+      alert("Name Already Exists! Please enter a different name.");
+    }
   };
   // useEffect hook to check for duplicates whenever the name state variable changes.
   useEffect(() => {
-    const nameIsDuplicate = () => {
-      const found = contacts.find((contact) => contact.name === name);
-      if (found !== undefined) {
-        return true;
-      }
-      return false;
-    };
-    if (nameIsDuplicate()) {
-      setIsDuplicate(true);
-    } else {
-      setIsDuplicate(false);
-    }
-  }, [name, contacts, isDuplicate]);
+    const isNameDuplicate = contacts.some(contact => contact.name === name);
+    setIsDuplicate(isNameDuplicate);
+  }, [name, contacts]);
   /*
   Using hooks, check for contact name in the 
   contacts array variable in props
