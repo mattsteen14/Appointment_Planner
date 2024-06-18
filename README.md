@@ -138,10 +138,9 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
-4. Enter your Client ID in `Spotify.js`
-   For a guide on how to obtain a Spotify client ID: [Spotify Application Registration Flow](https://developer.spotify.com/documentation/web-api/concepts/apps).
-   ```js
-   const clientID = 'ENTER YOUR CLIENT ID';
+3. Run app in development mode in local browser
+   ```sh
+   npm start
    ```
 
 # Getting Started with Create React App
