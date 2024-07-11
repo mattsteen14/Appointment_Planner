@@ -1,14 +1,4 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -25,14 +15,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
-<!-- PROJECT LOGO -->
-<!-- <br />
-<div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="/portfolio/resources/images/PortfolioScreenshot.png" alt="Logo" width="80" height="80">
-  </a> -->
 
 <h3 align="center">Appointment Planner</h3>
 
@@ -82,8 +64,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<!-- [![Portfolio Screen Shot][product-screenshot]](https://github.com/mattsteen14/appointment_planner) -->
-
 ### Codecademy Project Brief
 
 "In this project, you will use functional React components to create an app that manages contacts and appointments. The app consists of two pages: one to view and add contacts and one to view and add appointments.
@@ -92,7 +72,7 @@ You will work with stateful and stateless functional React components using hook
 
 ### My Comments
 
-I feel that this Appointment Planner challenge project has been really valuable and quite enjoyable. It has only taken me a day and a half to complete and things went a lot smoother than my other recent React projects for the course like [Jammming](https://github.com/mattsteen14/jammming) which is still ongoing so I feel that I am growing in confidence with React and getting into a flow more often with it. I compared mine with the solution code provided. This helped with some troubleshooting issues like why the TileList wasn't generating but through testing I worked out that some of my code worked so I kept it like I had it, like the useEffect() & the alert in the handleSubmit() in the ContactsPage component.
+I feel that this [Appointment Planner challenge project](https://www.codecademy.com/journeys/front-end-engineer/paths/fecj-22-web-development-foundations/tracks/fecj-22-react-part-ii/modules/wdcp-22-appointment-planner-db363852-2c99-4d3f-b3ba-84faed08e76b/projects/appointment-planner) has been really valuable and quite enjoyable. It has only taken me a day and a half to complete and things went a lot smoother than my other recent React projects for the course so I feel that I am growing in confidence with React and getting into a flow more often with it. I compared mine with the solution code provided. This helped with some troubleshooting issues like why the TileList wasn't generating but through testing I worked out that some of my code worked so I kept it like I had it, like the useEffect() & the alert in the handleSubmit() in the ContactsPage component.
 
 To add to the project I want to personalise and improve the styling with CSS and I would like to add functionality to remove contacts and appointments. Other suggestions are welcome so feel free to request features.
 
@@ -219,10 +199,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- ROADMAP -->
 ## Roadmap
 
+- [x] Complete project as per Codecademy brief.
+- [x] Request code review on Codecademy forums.
+- [x] Share on Codecademy forums for feedback.
 - [ ] Personalise & improve styling with CSS.
 - [ ] Add functionality to remove contacts & appointments.
 - [ ] Testing & Debugging.
-- [ ] Share on Codecademy forums for feedback.
 - [ ] Use surge to deploy.
 
 See the [open issues](https://github.com/mattsteen14/appointment_planner/issues) for a full list of proposed features (and known issues).
